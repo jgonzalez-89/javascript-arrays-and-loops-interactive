@@ -3,7 +3,7 @@ let contact = {
     phone: "321-321-4321",
     email: "test@test.com"
 }
-for(let key in contact){
-    // Code goes here
-}
 
+for (const [key, value] of Object.entries(contact)) {
+    console.log(key + " : " + value);
+  }
